@@ -1,0 +1,25 @@
+#!/bin/sh
+
+SCRIPT_PATH=`echo $0 | sed -e "s/^.\///g"`
+case "$SCRIPT_PATH" in
+	/*) SCRIPT_DIR=`dirname "$SCRIPT_PATH"` ;;
+	*) SCRIPT_DIR=`dirname "$PWD/$SCRIPT_PATH"` ;;
+esac
+
+DOTFILES=`find ${SCRIPT_DIR} -name ".*" -d 1`
+
+for DOTFILE in ${DOTFILES}
+ do
+	BASENAME=`basename ${DOTFILE}`
+	if [ "${BASENAME}" != ".git" ]
+	then
+		if [ -f ~/${BASENAME} ]
+		then
+			echo "\033[0;31m${BASENAME} is exist\033[0;39m"
+			rm -rf ~/${BASENAME}
+		fi
+
+		ln -s ${DOTFILE} ~/${BASENAME}
+		echo "\033[0;32m${BASENAME} install\033[0;39m"
+	fi
+done

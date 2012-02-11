@@ -1,0 +1,9 @@
+[user]
+	name = Sho Kusano
+	email = rosylilly@aduca.org
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	cm = commit
+	bc = branch
