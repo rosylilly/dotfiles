@@ -7,3 +7,8 @@
 	ci = commit
 	cm = commit
 	bc = branch
+	ps = push
+[core]
+	editor = vim
+[color]
+	ui = true
