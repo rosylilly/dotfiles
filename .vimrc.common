@@ -1,0 +1,14 @@
+set nobackup
+set noswapfile
+set autoread
+set hidden
+set backspace=indent,eol,start
+set vb t_vb=
+set browsedir=buffer
+set whichwrap=b,s,h,l,<,>,[,]
+set showcmd
+set showmode
+
+set clipboard+=unnamed
+
+filetype plugin on
