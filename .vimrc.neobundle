@@ -1,0 +1,10 @@
+
+set nocompatible
+filetype plugin indent off
+
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+NeoBundle "tpope/vim-surround"
+
+filetype plugin indent on

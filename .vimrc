@@ -1,0 +1,3 @@
+
+" Neobundle
+source ~/.vimrc.neobundle
