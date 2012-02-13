@@ -1,0 +1,7 @@
+
+set autowriteall
+autocmd CursorHold *  wall
+autocmd CursorHoldI *  wall
+
+noremap : ;
+noremap ; :

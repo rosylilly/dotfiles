@@ -80,6 +80,10 @@ setopt nolistbeep
 autoload history-search-end
 bindkey '^R' history-incremental-pattern-search-backward
 
+autoload -U compinit && compinit
+
+autoload -U bashcompinit && bashcompinit && source ~/.zshrc.gitcomp
+
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 case "${OSTYPE}" in
 	darwin*)

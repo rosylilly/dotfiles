@@ -17,3 +17,6 @@ source ~/.vimrc.statusline
 
 " NeoCompleteCache
 source ~/.vimrc.neocompletecache
+
+" Util
+source ~/.vimrc.util

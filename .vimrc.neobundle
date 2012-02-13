@@ -27,6 +27,7 @@ NeoBundle 'operator-user'
 NeoBundle 'operator-camelize'
 NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'msanders/snipmate.vim'
 
 NeoBundle 'desert256.vim'
 
