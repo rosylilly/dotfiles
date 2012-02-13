@@ -14,3 +14,6 @@ source ~/.vimrc.indent
 " Statusline
 " copied by https://github.com/yuroyoro/dotfiles/blob/master/.vimrc.statusline
 source ~/.vimrc.statusline
+
+" NeoCompleteCache
+source ~/.vimrc.neocompletecache
