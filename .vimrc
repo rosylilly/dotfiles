@@ -11,6 +11,9 @@ source ~/.vimrc.color
 " Indent
 source ~/.vimrc.indent
 
+" Search
+source ~/.vimrc.search
+
 " Statusline
 " copied by https://github.com/yuroyoro/dotfiles/blob/master/.vimrc.statusline
 source ~/.vimrc.statusline
