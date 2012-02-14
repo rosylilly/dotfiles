@@ -11,4 +11,10 @@ set showmode
 
 set clipboard+=unnamed
 
+set number
+
+if exists('&ambiwidth')
+  set ambiwidth=double
+endif
+
 filetype plugin on
