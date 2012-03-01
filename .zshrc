@@ -12,8 +12,8 @@ CYAN="%{${fg[cyan]}%}"
 WHITE="%{${fg[white]}%}"
 
 setopt prompt_subst
-PROMPT="${CYAN}\$ ${RESET}"
-RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)% ${RESET}${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
+PROMPT="${CYAN}∴  ${RESET}"
+RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)${RESET}${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 
@@ -84,6 +84,9 @@ autoload -U compinit && compinit
 
 autoload -U bashcompinit && bashcompinit && source ~/.zshrc.gitcomp
 
+# brew completion
+[ -f /usr/local/Library/Contributions/brew_zsh_completion.zsh ] && source /usr/local/Library/Contributions/brew_zsh_completion.zsh
+
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 case "${OSTYPE}" in
 	darwin*)
@@ -93,3 +96,5 @@ case "${OSTYPE}" in
 		[ -f ~/.zshrc.linux ] && source ~/.zshrc.linux
 		;;
 esac
+
+[ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux

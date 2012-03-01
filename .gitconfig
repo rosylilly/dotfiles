@@ -8,7 +8,11 @@
 	cm = commit
 	bc = branch
 	ps = push
+  pl = pull
+	tracking = checkout -t
 [core]
 	editor = vim
 [color]
 	ui = true
+[push]
+	default = tracking
