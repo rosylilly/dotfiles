@@ -17,6 +17,13 @@ RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)${RESET}${WHITE}]${WINDOW
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
 
+HISTFILE=$HOME/.zsh-history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt extended_history
+function history-all { history -E 1 }
+setopt share_history
+
 zstyle ':vcs_info:*' enable git svn hg bzr
 zstyle ':vcs_info:*' formats '(%s)-[%b]'
 zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
@@ -78,14 +85,21 @@ setopt noautoremoveslash
 setopt nolistbeep
 
 autoload history-search-end
-bindkey '^R' history-incremental-pattern-search-backward
 
+# completion
+fpath=($HOME/.zsh/functions/ $fpath)
+fpath=(/usr/local/Cellar/git-now/0.1.0.9/share/zsh/functions $fpath)
 autoload -U compinit && compinit
 
 autoload -U bashcompinit && bashcompinit && source ~/.zshrc.gitcomp
 
-# brew completion
-[ -f /usr/local/Library/Contributions/brew_zsh_completion.zsh ] && source /usr/local/Library/Contributions/brew_zsh_completion.zsh
+# bindkeys
+bindkey -v # vi mode
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey "^P" up-line-or-history
+bindkey "^N" down-line-or-history
+
+# [ -f ~/.zshrc.vistatus ] && source ~/.zshrc.vistatus
 
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 case "${OSTYPE}" in
@@ -98,3 +112,4 @@ case "${OSTYPE}" in
 esac
 
 [ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux
+

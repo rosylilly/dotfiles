@@ -5,3 +5,6 @@ alias lf="ls -F"
 alias ll="ls -la"
 
 alias be="bundle exec"
+
+alias pd="popd"
+
