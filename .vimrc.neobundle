@@ -8,17 +8,29 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundle "tpope/vim-surround"
 
 " for langs
+NeoBundle "othree/html5.vim"
+
+NeoBundle "vim-scripts/Better-CSS-Syntax-for-Vim"
+
 NeoBundle "vim-scripts/vim-coffee-script"
 NeoBundle "pangloss/vim-javascript"
+NeoBundle 'jQuery'
+
 NeoBundle "vim-ruby/vim-ruby"
-NeoBundle "vim-scripts/haskell.vim"
-NeoBundle "othree/html5.vim"
-NeoBundle "vim-scripts/Better-CSS-Syntax-for-Vim"
-NeoBundle "tpope/vim-haml"
+
 NeoBundle "tpope/vim-rails"
+
+NeoBundle "tpope/vim-haml"
+
+NeoBundle "vim-scripts/haskell.vim"
+
 NeoBundle 'nginx.vim'
+
 NeoBundle 'tpope/vim-markdown'
 
+NeoBundle 'yuroyoro/vim-scala'
+
+" other
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'yuroyoro/vim-autoclose'
 NeoBundle 'xmledit'
@@ -28,6 +40,7 @@ NeoBundle 'operator-camelize'
 NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'msanders/snipmate.vim'
+NeoBundle 'eregex.vim'
 
 NeoBundle 'desert256.vim'
 
