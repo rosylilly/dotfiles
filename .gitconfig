@@ -1,18 +1,20 @@
 [user]
-	name = Sho Kusano
-	email = rosylilly@aduca.org
+  name = Sho Kusano
+  email = rosylilly@aduca.org
 [alias]
-	st = status
-	co = checkout
-	ci = commit
-	cm = commit
-	bc = branch
-	ps = push
+  st = status
+  co = checkout
+  ci = commit
+  cm = commit
+  ca = commit -a
+  bc = branch
+  ps = push
   pl = pull
-	tracking = checkout -t
+  pb = pull --rebase
+  tracking = checkout -t
 [core]
-	editor = vim
+  editor = vim
 [color]
-	ui = true
+  ui = true
 [push]
-	default = tracking
+  default = tracking
