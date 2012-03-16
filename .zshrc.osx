@@ -23,3 +23,7 @@ if [[ -s $HOME/.zshrc.rbenv ]] ; then source ~/.zshrc.rbenv; fi
 
 # nenv
 if [[ -s $HOME/.zshrc.nenv ]] ; then source ~/.zshrc.nenv; fi
+
+# util
+export LESS='-R'
+alias tree='tree -C'
