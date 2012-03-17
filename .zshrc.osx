@@ -4,6 +4,7 @@ export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
 # osx alias
 alias pbc='pbcopy'
 alias ls='ls -G'
+alias less='~/Applications/MacVim.app/Contents/Resources/vim/runtime/macros/less.sh'
 
 # Terminal Colorの設定
 export CLICOLOR=1

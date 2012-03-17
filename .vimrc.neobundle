@@ -41,6 +41,7 @@ NeoBundle 'taku-o/vim-toggle'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'eregex.vim'
+NeoBundle 'taglist.vim'
 
 NeoBundle 'desert256.vim'
 

@@ -78,6 +78,7 @@ setopt auto_param_keys
 setopt auto_param_slash
 setopt brace_ccl
 setopt auto_menu
+setopt mark_dirs
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
 zstyle ':completion:*' list-colors di=34 fi=0
 setopt multios
