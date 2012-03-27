@@ -1,9 +1,15 @@
 
 " なんらかのコマンドもしくは0.1秒無操作時に自動的に保存
 set autowriteall
-autocmd CursorHold *  wall
-autocmd CursorHoldI *  wall
+function! AutoUp()
+  if expand('%') =~ g:svbfre && !&readonly && &buftype == ''
+    silent update
+  endif
+endfunction
+autocmd CursorHold * call AutoUp()
+autocmd CursorHoldI * call AutoUp()
 set updatetime=100
+let g:svbfre = '.\+'
 
 noremap : ;
 noremap ; :
