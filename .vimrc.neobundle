@@ -21,6 +21,7 @@ NeoBundle "vim-ruby/vim-ruby"
 NeoBundle "tpope/vim-rails"
 
 NeoBundle "tpope/vim-haml"
+NeoBundle "bbommarito/vim-slim"
 
 NeoBundle "vim-scripts/haskell.vim"
 
@@ -42,7 +43,11 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'eregex.vim'
 NeoBundle 'taglist.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Shougo/unite'
+NeoBundle 'majutsushi/tagbar'
 
 NeoBundle 'desert256.vim'
+NeoBundle 'charon.vim'
 
 filetype plugin indent on
