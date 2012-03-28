@@ -16,13 +16,22 @@ noremap ; :
 
 " ウィンドウ移動
 nnoremap <C-j> <C-w>j
+nnoremap <C-Up> <C-w>j
 nnoremap <C-k> <C-w>k
+nnoremap <C-Down> <C-w>k
 nnoremap <C-h> <C-w>h
+nnoremap <C-Left> <C-w>h
 nnoremap <C-l> <C-w>l
+nnoremap <C-Right> <C-w>l
 nnoremap <C-w>v :vs<CR>
 nnoremap <C-w>h :sp<CR>
-nnoremap <C-+> <C-w>+
-nnoremap <C--> <C-w>-
+
+" Tagbar
+nnoremap <C-t> :TagbarToggle<CR>
+let g:tagbar_left=1
+let g:tagbar_sort=0
+let g:tagbar_iconchars = ['+', '-']
+let g:tagbar_expand=1
 
 " Enable mouse support.
 set mouse=a
