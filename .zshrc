@@ -65,10 +65,25 @@ function _git_not_pushed()
 }
 RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 
+function zle-line-init zle-keymap-select {
+  case $KEYMAP in
+    vicmd)
+      PROMPT="${GREEN}⚡ ${RESET}"
+    ;;
+    main|viins)
+      PROMPT="${YELLOW}⚡ ${RESET}"
+    ;;
+  esac
+  zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 setopt auto_cd
 setopt auto_pushd
+setopt pushd_ignore_dups
 setopt correct
 setopt correct_all
 setopt list_packed
