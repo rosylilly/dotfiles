@@ -23,3 +23,7 @@ source ~/.vimrc.neocompletecache
 
 " Util
 source ~/.vimrc.util
+
+" coffeetags
+" require: gem install coffeetags
+source ~/.vimrc.coffeetags

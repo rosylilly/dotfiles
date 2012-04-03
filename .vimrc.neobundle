@@ -47,6 +47,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 
 NeoBundle 'desert256.vim'

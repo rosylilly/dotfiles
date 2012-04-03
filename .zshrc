@@ -10,9 +10,10 @@ GREEN="%{${fg[green]}%}"
 BLUE="%{${fg[blue]}%}"
 CYAN="%{${fg[cyan]}%}"
 WHITE="%{${fg[white]}%}"
+YELLOW="%{${fg[yellow]}%}"
 
 setopt prompt_subst
-PROMPT="${CYAN}∴  ${RESET}"
+PROMPT="${YELLOW}⚡ ${RESET}"
 RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)${RESET}${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info

@@ -45,3 +45,6 @@ if has('gui_running')
   " Hide mouse pointer on insert mode.
   set mousehide
 endif
+
+" VimShell
+let g:vimshell_editor_command='vim'
