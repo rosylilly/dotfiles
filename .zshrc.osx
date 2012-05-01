@@ -1,5 +1,13 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
+export PATH=~/.cabal/bin:$PATH
+export PATH=/usr/local/Cellar/flex_sdk/4.6.0.23201/libexec/bin:$PATH
+
+# Flex Path
+export FLEX_HOME=/usr/local/Cellar/flex_sdk/4.6.0.23201/libexec
+
+# Ant
+export ANT_OPTS=-Dfile.encoding=UTF8
 
 # osx alias
 alias pbc='pbcopy'

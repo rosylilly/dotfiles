@@ -5,7 +5,7 @@
   st = status
   co = checkout
   ci = commit
-  cm = commit
+  cm = commit -m
   ca = commit -a
   bc = branch
   ps = push

@@ -1,6 +1,6 @@
 
 " なんらかのコマンドもしくは0.1秒無操作時に自動的に保存
-set autowriteall
+"set autowriteall
 function! AutoUp()
   if expand('%') =~ g:svbfre && !&readonly && &buftype == ''
     silent update

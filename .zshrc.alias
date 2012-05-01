@@ -8,3 +8,4 @@ alias be="bundle exec"
 
 alias pd="popd"
 
+alias byword="open -a Byword.app"

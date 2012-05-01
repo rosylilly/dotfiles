@@ -18,6 +18,11 @@ NeoBundle 'jQuery'
 
 NeoBundle "vim-ruby/vim-ruby"
 
+NeoBundle 'postmodern/vim-yard'
+
+NeoBundle "jeroenbourgois/vim-actionscript"
+NeoBundle "ActionScript-3-Omnicomplete"
+
 NeoBundle "tpope/vim-rails"
 
 NeoBundle "tpope/vim-haml"
