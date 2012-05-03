@@ -1,0 +1,33 @@
+#compdef guard
+
+local -a _1st_arguments
+_1st_arguments=(
+  "help:Describe available tasks or one specific task"
+  "init:Generates a Guardfile at the current directory (if it is not already ..."
+  "list:Lists guards that can be used with init"
+  "show:Show all defined Guards and their options"
+  "start:Starts Guard"
+  "version:Show the Guard version)"
+)
+
+_arguments \
+  '*:: :->subcmds' && return 0
+
+if (( CURRENT == 1 )); then
+  _describe -t commands "guard tasks" _1st_arguments
+  return
+fi
+
+case "$words[1]" in 
+  help)
+    local -a _guard_tasks
+    _guard_tasks=(
+      "init:Generates a Guardfile at the current directory (if it is not already ..."
+      "list:Lists guards that can be used with init"
+      "show:Show all defined Guards and their options"
+      "start:Starts Guard"
+      "version:Show the Guard version)"
+    )
+    _describe -t tasks "help tasks" _guard_tasks
+    return 1
+esac
