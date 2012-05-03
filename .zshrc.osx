@@ -37,3 +37,5 @@ if [[ -s $HOME/.zshrc.nenv ]] ; then source ~/.zshrc.nenv; fi
 # util
 export LESS='-R'
 alias tree='tree -C'
+
+if [[ -s `which hub` ]] ; then alias git='hub'; fi
