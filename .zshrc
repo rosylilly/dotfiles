@@ -11,9 +11,10 @@ BLUE="%{${fg[blue]}%}"
 CYAN="%{${fg[cyan]}%}"
 WHITE="%{${fg[white]}%}"
 YELLOW="%{${fg[yellow]}%}"
+BLACK="%{${fg[black]}%}"
 
 setopt prompt_subst
-PROMPT="${YELLOW}⚡ ${RESET}"
+PROMPT="${BLUE}(･_･) ${BLACK}.oO ${RESET}"
 RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)${RESET}${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
@@ -25,11 +26,10 @@ setopt extended_history
 function history-all { history -E 1 }
 setopt share_history
 
-zstyle ':vcs_info:*' enable git svn hg bzr
-zstyle ':vcs_info:*' formats '(%s)-[%b]'
-zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
-zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
-zstyle ':vcs_info:bzr:*' use-simple true
+zstyle ':vcs_info:*' enable git svn
+zstyle ':vcs_info:*' formats '[]%b]'
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+zstyle ':vcs_info:(svn):*' branchformat '%b:r%r'
 
 autoload -Uz is-at-least
 if is-at-least 4.3.10; then
@@ -37,8 +37,8 @@ if is-at-least 4.3.10; then
 	zstyle ':vcs_info:git:*' check-for-changes true
 	zstyle ':vcs_info:git:*' stagedstr "+"    # 適当な文字列に変更する
 	zstyle ':vcs_info:git:*' unstagedstr "-"  # 適当の文字列に変更する
-	zstyle ':vcs_info:git:*' formats '(%s)-[%c%u%b]'
-	zstyle ':vcs_info:git:*' actionformats '(%s)-[%c%u%b|%a]'
+	zstyle ':vcs_info:git:*' formats '[%c%u%b]'
+	zstyle ':vcs_info:git:*' actionformats '[%c%u%b|%a]'
 fi
 
 function _update_vcs_info_msg() {
@@ -68,10 +68,10 @@ RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${GREEN}
 function zle-line-init zle-keymap-select {
   case $KEYMAP in
     vicmd)
-      PROMPT="${GREEN}⚡ ${RESET}"
+      PROMPT="${GREEN}(･v･) ${BLACK}.oO ${RESET}"
     ;;
     main|viins)
-      PROMPT="${YELLOW}⚡ ${RESET}"
+      PROMPT="${BLUE}(･_･) ${BLACK}.oO ${RESET}"
     ;;
   esac
   zle reset-prompt
