@@ -1,7 +1,7 @@
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/opt/local/bin:/opt/local/sbin/:~/bin:$PATH
+export PATH=/opt/local/bin:~/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
 export PATH=/usr/local/Cellar/flex_sdk/4.6.0.23201/libexec/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Flex Path
 export FLEX_HOME=/usr/local/Cellar/flex_sdk/4.6.0.23201/libexec
@@ -37,5 +37,3 @@ if [[ -s $HOME/.zshrc.nenv ]] ; then source ~/.zshrc.nenv; fi
 # util
 export LESS='-R'
 alias tree='tree -C'
-
-if [[ -s `which hub` ]] ; then alias git='hub'; fi
