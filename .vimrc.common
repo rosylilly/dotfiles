@@ -17,4 +17,26 @@ if exists('&ambiwidth')
   set ambiwidth=double
 endif
 
+noremap : ;
+noremap ; :
+
+nnoremap <Space>. :<C-u>source $MYVIMRC<CR>
+
+" 自動保存
+set autowriteall
+augroup AutoSaveFile
+  autocmd!
+  autocmd CursorHold * call AutoUp()
+  autocmd CursorHoldI * call AutoUp()
+augroup END
+set updatetime=100
+let g:svbfre = '.\+'
+function! AutoUp()
+  if expand('%') =~ g:svbfre && !&readonly && &buftype == ''
+    silent update
+  endif
+endfunction
+
+set mouse=a
+
 filetype plugin on
