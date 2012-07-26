@@ -12,7 +12,7 @@ export ANT_OPTS=-Dfile.encoding=UTF8
 # osx alias
 alias pbc='pbcopy'
 alias ls='ls -G'
-alias less='~/Applications/MacVim.app/Contents/Resources/vim/runtime/macros/less.sh'
+alias less='/Applications/MacVim.app/Contents/Resources/vim/runtime/macros/less.sh'
 
 # Terminal Colorの設定
 export CLICOLOR=1
@@ -20,8 +20,8 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # vim
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vi='env LANG=ja_JP.UTF-8 ${HOME}/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 ${HOME}/Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias gvim='env LANG=ja_JP.UTF-8 open -a MacVim "$@"'
 alias mvim='mvim --remote-tab-silent "$@"'
 
@@ -32,7 +32,8 @@ alias mvim='mvim --remote-tab-silent "$@"'
 if [[ -s $HOME/.zshrc.rbenv ]] ; then source ~/.zshrc.rbenv; fi
 
 # nenv
-if [[ -s $HOME/.zshrc.nenv ]] ; then source ~/.zshrc.nenv; fi
+#if [[ -s $HOME/.zshrc.nenv ]] ; then source ~/.zshrc.nenv; fi
+export NODE_PATH=/usr/local/lib/node_modules
 
 # util
 export LESS='-R'

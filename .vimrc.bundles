@@ -31,6 +31,12 @@ NeoBundle 'eregex.vim'
 
 " skin
 NeoBundle 'molokai'
+NeoBundle 'desert256.vim'
 NeoBundle 'Lokaltog/vim-powerline'
 
+" Additional
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'majutushi/tagbar'
+
 filetype plugin indent on
+au BufNewFile,BufReadPost *.coffee setf coffee

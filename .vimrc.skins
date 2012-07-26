@@ -1,7 +1,9 @@
 " syntax color
-colorscheme molokai
+colorscheme desert256
 syntax on
 
 " status line
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
+
+set hlsearch

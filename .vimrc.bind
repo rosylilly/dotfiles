@@ -1,0 +1,2 @@
+nmap gw :Gwrite<CR>
+nmap gc :Gstatus<CR>
