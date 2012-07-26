@@ -1,2 +1,10 @@
-nmap gw :Gwrite<CR>
-nmap gc :Gstatus<CR>
+nnoremap <C-t> :TagbarToggle<CR>
+nnoremap gw :Gwrite<CR>
+nnoremap g<Space> :Gstatus<CR>
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l

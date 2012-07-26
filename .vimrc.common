@@ -38,5 +38,6 @@ function! AutoUp()
 endfunction
 
 set mouse=a
+autocmd BufWritePre * :%s/\s\+$//ge
 
 filetype plugin on

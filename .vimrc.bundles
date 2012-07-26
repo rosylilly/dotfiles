@@ -36,7 +36,7 @@ NeoBundle 'Lokaltog/vim-powerline'
 
 " Additional
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'majutushi/tagbar'
+NeoBundle 'majutsushi/tagbar'
 
 filetype plugin indent on
 au BufNewFile,BufReadPost *.coffee setf coffee
