@@ -28,6 +28,7 @@ NeoBundle 'yuroyoro/vim-scala'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'eregex.vim'
+NeoBundle 'sudo.vim'
 
 " skin
 NeoBundle 'molokai'
@@ -37,6 +38,9 @@ NeoBundle 'Lokaltog/vim-powerline'
 " Additional
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimshell'
 
 filetype plugin indent on
 au BufNewFile,BufReadPost *.coffee setf coffee
+au BufNewFile,BufReadPost *.slim setf slim

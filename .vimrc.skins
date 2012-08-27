@@ -1,9 +1,11 @@
 " syntax color
-colorscheme desert256
 syntax on
+colorscheme desert256
 
 " status line
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
-set hlsearch
+set nohlsearch
+set nocursorline
+set nocursorcolumn

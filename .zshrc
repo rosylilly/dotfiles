@@ -129,4 +129,5 @@ case "${OSTYPE}" in
 esac
 
 [ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux
+[ -f ~/.zshrc.dev ] && source ~/.zshrc.dev
 
