@@ -14,10 +14,29 @@ alias mou="open -a Mou.app"
 source ~/.zsh/modules/zsh-context-sensitive-alias/csa.zsh
 csa_init
 
-csalias ctx_git st 'git status'
-csalias ctx_git ci 'git commit'
-csalias ctx_git pl 'git pull'
-csalias ctx_git ps 'git push'
-csalias ctx_git bc 'git branch'
-csalias ctx_git co 'git checkout'
-csalias ctx_git fl 'git flow'
+# コンテキストを更新する関数
+function my_context_func {
+	local -a ctx
+	# Git リポジトリの中にいるなら git コンテキストをセット
+	if [[ -n `git rev-parse --git-dir 2> /dev/null` ]]; then
+		ctx+=git
+	fi
+	# Mercurial リポジトリの中にいるなら hg コンテキストをセット
+	if [[ -n `hg root 2> /dev/null` ]]; then
+		ctx+=hg
+	fi
+	# コンテキストをセット
+	csa_set_context $ctx
+}
+
+# コンテキストを更新する関数が cd のたびに呼ばれるようにする
+typeset -ga chpwd_functions
+chpwd_functions+=my_context_func
+
+csalias git st 'git status'
+csalias git ci 'git commit'
+csalias git pl 'git pull'
+csalias git ps 'git push'
+csalias git bc 'git branch'
+csalias git co 'git checkout'
+csalias git fl 'git flow'
