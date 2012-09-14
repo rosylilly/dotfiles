@@ -13,6 +13,7 @@
   pb = pull --rebase
   tracking = checkout -t
   io = !"sh -c 'curl -i http://git.io/ -F url=$1 `[ -n \"$2\" ] && echo -F code=$2`' -"
+  pp = !"git pull --rebase && git push"
 [core]
   editor = vim
 [color]

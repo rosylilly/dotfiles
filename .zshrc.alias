@@ -47,7 +47,6 @@ csalias git st 'git status'
 csalias git ci 'git commit'
 csalias git ad 'git add'
 csalias git pl 'git pull'
-csalias git ps 'git push'
 csalias git bc 'git branch'
 csalias git co 'git checkout'
 csalias git fl 'git flow'
@@ -55,5 +54,7 @@ csalias git fl 'git flow'
 csalias bundler be 'bundle exec'
 
 csalias rbenv rehash 'rbenv rehash && rehash'
+
+csalias global jenkins 'java -jar /usr/local/Cellar/jenkins/1.478/libexec/jenkins.war'
 
 my_context_func $pwd
