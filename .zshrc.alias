@@ -39,6 +39,7 @@ csalias osx vi 'env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim
 csalias osx vim 'env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 csalias osx gvim 'env LANG=ja_JP.UTF-8 open -a MacVim "$@"'
 csalias osx tree 'tree -C'
+csalias osx jenkins 'java -jar /usr/local/Cellar/jenkins/1.478/libexec/jenkins.war'
 
 csalias global la 'ls -a'
 csalias global ll 'ls -la'
@@ -55,6 +56,6 @@ csalias bundler be 'bundle exec'
 
 csalias rbenv rehash 'rbenv rehash && rehash'
 
-csalias global jenkins 'java -jar /usr/local/Cellar/jenkins/1.478/libexec/jenkins.war'
+csalias global sudo='sudo '
 
 my_context_func $pwd
