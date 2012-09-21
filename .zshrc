@@ -130,6 +130,7 @@ case "${OSTYPE}" in
 esac
 
 [ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux
+[ -f ~/.zshrc.bundler ] && source ~/.zshrc.bundler
 [ -f ~/.zshrc.dev ] && source ~/.zshrc.dev
 
 typeset -U path
