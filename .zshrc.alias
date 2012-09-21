@@ -53,6 +53,11 @@ csalias git co 'git checkout'
 csalias git fl 'git flow'
 
 csalias bundler be 'bundle exec'
+csalias bundler guard 'bundle exec guard'
+csalias bundler rails 'bundle exec rails'
+csalias bundler rake 'bundle exec rake'
+csalias bundler thor 'bundle exec thor'
+csalias bundler rspec 'bundle exec rspec'
 
 csalias rbenv rehash 'rbenv rehash && rehash'
 
