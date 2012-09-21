@@ -25,6 +25,7 @@ SAVEHIST=100000
 setopt extended_history
 function history-all { history -E 1 }
 setopt share_history
+setopt print_eight_bit
 
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' formats '[]%b]'
@@ -131,3 +132,4 @@ esac
 [ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux
 [ -f ~/.zshrc.dev ] && source ~/.zshrc.dev
 
+typeset -U path
