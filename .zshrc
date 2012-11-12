@@ -14,7 +14,7 @@ YELLOW="%{${fg[yellow]}%}"
 BLACK="%{${fg[black]}%}"
 
 setopt prompt_subst
-PROMPT="${BLUE}(･_･) ${BLACK}.oO ${RESET}"
+PROMPT="${BLUE}(･_･) ${YELLOW}.oO ${RESET}"
 RPROMPT="${RESET}${WHITE}[${GREEN}%(5~,%-2~/.../%2~,%~)${RESET}${WHITE}]${WINDOW:+"[$WINDOW]"} ${RESET}"
 autoload -Uz add-zsh-hook
 autoload -Uz vcs_info
@@ -69,10 +69,10 @@ RPROMPT="%1(v|%F${CYAN}%1v%2v%f|)${vcs_info_git_pushed}${RESET}${WHITE}[${GREEN}
 function zle-line-init zle-keymap-select {
   case $KEYMAP in
     vicmd)
-      PROMPT="${GREEN}(･v･) ${BLACK}.oO ${RESET}"
+      PROMPT="${GREEN}(･v･) ${YELLOW}.oO ${RESET}"
     ;;
     main|viins)
-      PROMPT="${BLUE}(･_･) ${BLACK}.oO ${RESET}"
+      PROMPT="${BLUE}(･_･) ${YELLOW}.oO ${RESET}"
     ;;
   esac
   zle reset-prompt
@@ -131,5 +131,6 @@ esac
 
 [ -f ~/.zshrc.tmux ] && source ~/.zshrc.tmux
 [ -f ~/.zshrc.dev ] && source ~/.zshrc.dev
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 typeset -U path

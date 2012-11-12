@@ -61,6 +61,6 @@ csalias bundler rspec 'bundle exec rspec'
 
 csalias rbenv rehash 'rbenv rehash && rehash'
 
-csalias global sudo='sudo '
+csalias global sudo 'sudo '
 
 my_context_func $pwd

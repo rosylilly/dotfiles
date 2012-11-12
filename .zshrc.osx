@@ -17,7 +17,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # RVM
-# if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm && export CC="gcc-4.2"; fi
+if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm; fi
 
 # rbenv
 if [[ -s $HOME/.zshrc.rbenv ]] ; then source ~/.zshrc.rbenv; fi

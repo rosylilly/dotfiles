@@ -1,10 +1,10 @@
 " syntax color
 syntax on
-colorscheme desert256
+colorscheme Tomorrow-Night-Bright
 
 " status line
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 set nohlsearch
 set nocursorline
