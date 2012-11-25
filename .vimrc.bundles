@@ -23,6 +23,7 @@ NeoBundle 'vim-scripts/haskell.vim'
 NeoBundle 'nginx.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'yuroyoro/vim-scala'
+NeoBundle 'elixir-lang/vim-elixir'
 
 " editable
 NeoBundle 'tpope/vim-surround'
