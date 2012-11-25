@@ -62,5 +62,6 @@ csalias bundler rspec 'bundle exec rspec'
 csalias rbenv rehash 'rbenv rehash && rehash'
 
 csalias global sudo 'sudo '
+csalias global utime 'node -e "console.log(Math.floor((+new Date())/1000))"'
 
 my_context_func $pwd

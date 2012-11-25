@@ -10,3 +10,4 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-L> gt
 nnoremap <C-H> gT
+nnoremap <Space> :w<CR>

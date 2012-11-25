@@ -6,4 +6,5 @@ if has('gui_macvim')
   set guioptions-=l
   set guioptions-=b
   set antialias
+  colorscheme desert256
 endif
