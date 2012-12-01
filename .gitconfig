@@ -2,7 +2,7 @@
 	name = Sho Kusano
 	email = sho-kusano@cookpad.com
 [alias]
-  st = status
+  st = status -sb
   co = checkout
   ci = commit
   cm = commit -m

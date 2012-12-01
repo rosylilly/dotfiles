@@ -9,3 +9,5 @@ set laststatus=2
 set nohlsearch
 set nocursorline
 set nocursorcolumn
+
+set cc=80,1280
