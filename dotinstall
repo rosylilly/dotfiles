@@ -1,7 +1,4 @@
 #!/usr/bin/env ruby
-require 'rubygems'
-require 'colorize'
-
 basedir = File.dirname(File.expand_path(__FILE__))
 
 md5sum = (`which md5 2> /dev/null` || `which md5sum 2> /dev/null`).strip
@@ -16,7 +13,7 @@ Dir[File.join basedir, '/.*'].each do | file |
   old_conf = file
   new_conf = "#{ENV['HOME']}/#{basename}"
 
-  puts [basename.ljust(23).green, '=>', "~/#{basename}".red].join(' ')
+  puts [basename.ljust(23), '=>', "~/#{basename}"].join(' ')
   if File.symlink?(new_conf) || File.exist?(new_conf)
     `rm -rf #{new_conf}`
   end
