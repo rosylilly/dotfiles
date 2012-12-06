@@ -1,6 +1,9 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-if [ which rbenv 2> /dev/null ]; then
-  source ~/.rbenv/completions/rbenv.zsh
+if [ -d $HOME/.rbenv/bin ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+fi
+
+if [ -d $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
+  [ -f ~/.rbenv/completions/rbenv.zsh ] && source ~/.rbenv/completions/rbenv.zsh
   export RBXOPT=-X19
 fi
