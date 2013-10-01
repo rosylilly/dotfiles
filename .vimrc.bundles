@@ -19,25 +19,25 @@ NeoBundle 'ActionScript-3-Omnicomplete'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'romanvbabenko/rails.vim'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'vim-scripts/haskell.vim'
 NeoBundle 'nginx.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'yuroyoro/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'skwp/vim-rspec'
+NeoBundle 'sprsquish/thrift.vim'
+NeoBundle 'slim-template/vim-slim'
+NeoBundle 'jnwhiteh/vim-golang'
 
 " editable
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'eregex.vim'
-NeoBundle 'sudo.vim'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'ruby-matchit'
 
 " Completion
 NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'taichouchou2/vim-rsense'
 
 " skin
 NeoBundle 'molokai'
@@ -55,5 +55,3 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'h1mesuke/unite-outline'
 
 filetype plugin indent on
-au BufNewFile,BufReadPost *.coffee setf coffee
-au BufNewFile,BufReadPost *.slim setf slim

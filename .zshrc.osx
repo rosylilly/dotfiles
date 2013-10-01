@@ -15,7 +15,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # vim
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+export EDITOR=$HOME/Applications/MacVim.app/Contents/MacOS/Vim
 
 # android
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
