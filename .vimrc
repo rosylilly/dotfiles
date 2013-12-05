@@ -1,3 +1,4 @@
+source ~/.vimrc.coding
 source ~/.vimrc.bundles
 source ~/.vimrc.skins
 

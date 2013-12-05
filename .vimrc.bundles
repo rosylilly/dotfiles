@@ -25,9 +25,10 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'yuroyoro/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'skwp/vim-rspec'
-NeoBundle 'sprsquish/thrift.vim'
 NeoBundle 'slim-template/vim-slim'
-NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'theevocater/thrift.vim'
+NeoBundle 'vim-scripts/groovy.vim'
+NeoBundle 'sellerie/vim-gradle'
 
 " editable
 NeoBundle 'tpope/vim-surround'
@@ -35,6 +36,7 @@ NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'eregex.vim'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'ruby-matchit'
+NeoBundle 'Blackrush/vim-gocode'
 
 " Completion
 NeoBundle 'Shougo/neocomplcache'
@@ -55,3 +57,4 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'h1mesuke/unite-outline'
 
 filetype plugin indent on
+syntax on

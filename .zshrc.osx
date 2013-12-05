@@ -15,7 +15,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # vim
-export EDITOR=$HOME/Applications/MacVim.app/Contents/MacOS/Vim
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # android
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
@@ -40,3 +40,9 @@ export HAXE_LIBRARY_PATH="$(brew --prefix)/share/haxe/std"
 if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
+
+export GOPATH="${HOME}/gocode"
+export PATH="${GOPATH}/bin:${PATH}"
+
+# bzr
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH

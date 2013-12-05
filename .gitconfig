@@ -1,12 +1,11 @@
 [user]
 	name = Sho Kusano
-	email = sho-kusano@cookpad.com
+	email = rosylilly@aduca.org
 [alias]
   st = status -sb
   co = checkout
-  ci = commit
-  cm = commit -m
-  ca = commit -a
+  ci = commit -v
+  ca = ci -a
   bc = branch
   ps = push
   pl = pull
